@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOBBY BROTHERS TATTOOS • 80s Rad Pop Culture Ink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .neon-pink { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; }
+    .neon-cyan { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://picsum.photos/id/1015/1920/1080'); background-size: cover; background-position: center; }
+    .card-hover { transition: all 0.3s; }
+    .card-hover:hover { transform: scale(1.05); filter: brightness(1.1); }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-black/90 border-b border-pink-500 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-skull text-3xl text-pink-500"></i>
+        <h1 class="text-3xl font-black tracking-tighter neon-pink">BOBBY BROTHERS</h1>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg font-medium">
+        <a href="#tattoos" class="hover:text-pink-500 transition">TATTOOS</a>
+        <a href="#flash" class="hover:text-cyan-400 transition">FLASH &amp; EROTIC ART</a>
+        <a href="#shop" class="hover:text-yellow-400 transition">SHOP</a>
+        <a href="#contact" class="hover:text-pink-500 transition">BOOK</a>
+      </div>
+      <a href="https://instagram.com/bobbybrotherstattoos" target="_blank" class="text-2xl hover:text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-bg h-screen flex items-center pt-20">
+    <div class="max-w-5xl mx-auto text-center px-6">
+      <p class="text-pink-500 text-2xl mb-2 tracking-[6px] font-bold neon-pink">OKLAHOMA CITY • STUDIO 405 • SINCE 2008</p>
+      <h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-none mb-6">THE WEIRDER<br>THE BETTER</h1>
+      <p class="text-3xl md:text-5xl font-light neon-cyan mb-8">Anime • Video Games • Movies • Cartoons<br>Bright colors • Bold lines • Heavy black • Pure sex appeal</p>
+      <a href="#contact" class="inline-block bg-pink-600 hover:bg-pink-700 px-12 py-6 text-3xl font-black tracking-widest transition">BOOK YOUR RAD TATTOO</a>
+      <p class="mt-12 text-sm opacity-70">Only pop-culture, only fun, only sexy as fuck.</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="py-24 bg-black border-b border-zinc-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-6xl font-black mb-8 neon-pink">80s KID. STILL RAD AF.</h2>
+      <p class="text-2xl leading-relaxed max-w-3xl mx-auto">Bobby Brothers — Oklahoma City tattoo artist at Studio 405. I only do pop-culture ink: anime waifus, video game legends, movie icons, cartoons. Bright as hell, bold lines, tons of black to make the colors explode. Tattoos should be cool, sexy, and fucking well done. My flash & artwork? Straight-up sexy erotic shit only. The weirder the better. Let's make you a masterpiece.</p>
+    </div>
+  </section>
+
+  <!-- TATTOO GALLERY -->
+  <section id="tattoos" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-6xl font-black text-center mb-16 neon-pink">CURRENT TATTOO WORK</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div onclick="showModal(this)" class="card-hover cursor-pointer bg-zinc-900 rounded-xl overflow-hidden">
+          <img src="https://picsum.photos/id/201/600/800" class="w-full h-96 object-cover" alt="Tattoo placeholder">
+          <div class="p-4"><p class="font-bold text-pink-400">Your real tattoo photo here (replace later)</p></div>
+        </div>
+        <!-- Add more cards like this when you have photos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FLASH GALLERY -->
+  <section id="flash" class="py-24 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-6xl font-black text-center mb-16 neon-cyan">FLASH &amp; SEXY EROTIC ART</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div onclick="showModal(this)" class="card-hover cursor-pointer bg-black rounded-xl overflow-hidden">
+          <img src="https://picsum.photos/id/1011/600/800" class="w-full h-96 object-cover" alt="Flash placeholder">
+          <div class="p-4"><p class="font-bold text-pink-500">Your real flash/erotic art here (replace later)</p></div>
+        </div>
+        <!-- Add more when ready -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="py-24">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-6xl font-black mb-6 neon-yellow">SHOP MY SEXY SHIT</h2>
+      <p class="text-2xl mb-12">Adult coloring books &amp; erotic prints</p>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+          <img src="https://picsum.photos/id/1015/800/600" class="w-full" alt="Coloring Book">
+          <div class="p-8">
+            <h3 class="text-3xl font-bold mb-2">ANIME TATTOO GIRLS COLORING BOOK</h3>
+            <a href="YOUR_ETSY_OR_SHOP_LINK_HERE" class="block bg-pink-600 py-4 text-2xl font-black hover:bg-pink-700">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="contact" class="py-24 bg-black">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-6xl font-black text-center mb-12 neon-pink">BOOK YOUR SESSION</h2>
+      <form action="https://formspree.io/f/your-form-id-here" method="POST" class="space-y-8">
+        <input type="text" name="name" placeholder="YOUR NAME" class="w-full bg-zinc-900 border border-pink-500 rounded-xl px-6 py-5 text-xl">
+        <input type="email" name="email" placeholder="EMAIL" class="w-full bg-zinc-900 border border-pink-500 rounded-xl px-6 py-5 text-xl">
+        <textarea name="message" rows="6" placeholder="Tell me your pop-culture dream tattoo..." class="w-full bg-zinc-900 border border-pink-500 rounded-xl px-6 py-5 text-xl"></textarea>
+        <button type="submit" class="w-full bg-gradient-to-r from-pink-600 to-cyan-500 py-8 text-3xl font-black tracking-widest">SEND IT — LET'S MAKE IT SEXY</button>
+      </form>
+      <p class="text-center mt-8">(405) 886-6013 • @bobbybrotherstattoos on IG</p>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden fixed inset-0 bg-black/95 flex items-center justify-center z-[100]">
+    <div class="max-w-4xl w-full p-4">
+      <img id="modal-image" class="w-full rounded-2xl" alt="">
+      <button onclick="closeModal()" class="absolute top-8 right-8 text-4xl text-white">✕</button>
+    </div>
+  </div>
+
+  <script>
+    function showModal(el) {
+      document.getElementById('modal-image').src = el.querySelector('img').src;
+      document.getElementById('modal').classList.remove('hidden');
+    }
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
